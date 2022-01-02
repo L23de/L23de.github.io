@@ -6,7 +6,7 @@ import { QBtn } from 'quasar'
 <template>
     <div id="contact">
         <div id="contact-blurb">
-            <h2>Let's talk</h2>
+            <h2 class="header">Let's talk</h2>
             <p>Reach out to me on the these platforms!</p>
         </div>
         <div id="contact-buttons">
@@ -33,11 +33,6 @@ import { QBtn } from 'quasar'
 #contact-blurb {
     text-align: left;
     margin-right: 5vw;
-}
-
-#contact-blurb h2 {
-    margin-top: 3rem;
-    margin-bottom: 0;
 }
 
 #contact-blurb p {

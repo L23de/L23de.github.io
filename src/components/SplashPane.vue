@@ -2,12 +2,15 @@
 </script>
 
 <template>
-    <div id="splash">
+    <div id="splash" class="container">
         <h1>👋 I'm Lester Huang</h1>
         <!-- Brief about me with a good picture -->
     </div>
 </template>
 
 
-<style>
+<style scoped lang="scss">
+#splash {
+    background: white;
+}
 </style>

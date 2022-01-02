@@ -1,0 +1,50 @@
+[
+    {
+        "company": "Optum",
+        "logo_url": "@/assets/optum.svg",
+        "positions": [
+            {
+                "title": "Software Engineer Intern",
+                "time": "June - August 2021",
+                "summary": "My first professional software engineering related internship! Woohoo!",
+                "skills": ["Python", "REST APIs", "GraphQL", "Azure"]
+            }
+        ]
+    },
+    {
+        "company": "Lehigh University",
+        "logo_url": "@/assets/lehigh.svg",
+        "positions": [
+            {
+                "title": "Junior Systems Administrator",
+                "time": "January 2022 - Present",
+                "summary": "Work with the school's system of VMs powered by Sun Microsystems computers and work on a side projects and explore tech interests",
+                "skills": []
+            },
+            {
+                "title": "Teaching Assistant",
+                "time": "September 2021 - Present",
+                "summary": "CSE 109 TA, CSE 340 Upcoming TA (Tentative)",
+                "skills": ["C"]
+            },
+            {
+                "title": "B.S Computer Science | Data Science Minor",
+                "time": "September 2019 - Expected Grad. December 2022",
+                "summary": "Work on a bachelor's degree to pursue software engineering",
+                "skills": []
+            }
+        ]
+    },
+    {
+        "company": "JHU Engineering Innovation",
+        "logo_url": "",
+        "positions": [
+            {
+                "title": "Summer Program Participant",
+                "time": "September 2021 - Present",
+                "summary": "Partnership between Milton Hershey School, Harrisburg Area Community College and Johns Hopkins University. Participated in a summer-long engineering exploration that concluded with a spaghetti bridge breaking event",
+                "skills": []
+            }
+        ]
+    }
+]

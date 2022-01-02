@@ -2,13 +2,16 @@
 </script>
 
 <template>
-    <div id="hobbies">
-        Hobbies
-        <!-- Brief hobby desc and pictures if possible -->
+    <div id="hobbies" class="container">
+        <h2 class="header">My interests...</h2>
+        <!-- Brief resume -->
     </div>
 </template>
 
 
-<style>
-
+<style scoped lang="scss">
+#hobbies {
+    background: $accent;
+    color: white;
+}
 </style>

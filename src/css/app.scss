@@ -6,3 +6,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.container {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.header {
+    margin-top: 2rem; // Redefine h2 top margin
+    margin-bottom: 0;
+}
