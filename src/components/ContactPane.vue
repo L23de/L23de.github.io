@@ -28,6 +28,7 @@ import { QBtn } from 'quasar'
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 20vh;
 }
 
 h2 {

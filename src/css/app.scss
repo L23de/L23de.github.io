@@ -11,9 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.pane {
     padding-top: 1rem;
     padding-bottom: 5rem;
+    min-height: 60vh;
 }
 
 .header {

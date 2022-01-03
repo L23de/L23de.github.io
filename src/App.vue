@@ -2,7 +2,7 @@
 import NavBar from '@/components/NavBar.vue'
 import SplashPane from '@/components/SplashPane.vue'
 import CareerPane from '@/components/CareerPane.vue'
-import HumanPane from '@/components/HumanPane.vue'
+import InterestPane from '@/components/InterestPane.vue'
 import ContactPane from '@/components/ContactPane.vue'
 
 import { QScrollArea } from 'quasar'
@@ -12,6 +12,6 @@ import { QScrollArea } from 'quasar'
   <NavBar />
   <SplashPane />
   <CareerPane />
-  <HumanPane />
+  <InterestPane />
   <ContactPane />
 </template>
