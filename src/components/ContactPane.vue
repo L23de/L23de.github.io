@@ -30,6 +30,10 @@ import { QBtn } from 'quasar'
     justify-content: center;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
 #contact-blurb {
     text-align: left;
     margin-right: 5vw;
