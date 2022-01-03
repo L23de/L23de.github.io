@@ -56,9 +56,9 @@ $logoDimensions: 150px;
 }
 
 #scroll-window {
-    width: 60vw;
+    width: vw;
     overflow: auto;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 #career-entry {
@@ -67,7 +67,7 @@ $logoDimensions: 150px;
 
 #content {
     text-align: left;
-    margin-left: 5vw;
+    margin-left: 4vw;
 
     #company { // h3
         margin-top: 0;
@@ -84,6 +84,10 @@ $logoDimensions: 150px;
     #time { // h5
         margin-top: 0;
         margin-bottom: 1rem;
+    }
+
+    #position-content {
+        margin-bottom: 1.5rem;
     }
 }
 </style>

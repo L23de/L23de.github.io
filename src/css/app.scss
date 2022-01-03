@@ -1,5 +1,9 @@
 @import './quasar-variables.scss';
 
+body {
+    overflow: overlay; // Makes scrollbar inside the document instead of a gutter
+}
+
 #app {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -23,13 +27,14 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: $amber;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     right: 4px;
     width: 5px;
     opacity: 0.75;
+    background: white;
 }
 
 ::-webkit-scrollbar-thumb:hover {
