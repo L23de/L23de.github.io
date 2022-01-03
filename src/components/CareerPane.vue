@@ -18,7 +18,7 @@ const index = ref(0)
 
 <style scoped lang="scss">
 #career {
-    background: $amber;
+    background: #fd5151;
     color: white;
 }
 </style>
