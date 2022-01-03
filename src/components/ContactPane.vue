@@ -7,7 +7,7 @@ import { QBtn } from 'quasar'
     <div id="contact">
         <div id="contact-blurb">
             <h2 class="header">Let's talk</h2>
-            <p>Reach out to me on the these platforms!</p>
+            <p> Reach out to me on the these platforms!</p>
         </div>
         <div id="contact-buttons">
             <q-btn round icon="far fa-envelope-open" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="md" unelevated />
@@ -37,8 +37,6 @@ import { QBtn } from 'quasar'
 
 #contact-blurb p {
     margin-bottom: 3rem;
-}
-
-#contact-buttons {
+    margin-left: 4px; // Realign with the larger header
 }
 </style>

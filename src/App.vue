@@ -4,6 +4,8 @@ import SplashPane from '@/components/SplashPane.vue'
 import CareerPane from '@/components/CareerPane.vue'
 import HumanPane from '@/components/HumanPane.vue'
 import ContactPane from '@/components/ContactPane.vue'
+
+import { QScrollArea } from 'quasar'
 </script>
 
 <template>

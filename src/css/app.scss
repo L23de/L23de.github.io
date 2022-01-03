@@ -16,3 +16,22 @@
     margin-top: 2rem; // Redefine h2 top margin
     margin-bottom: 0;
 }
+
+/* Scrollbar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $amber;
+}
+
+::-webkit-scrollbar-thumb {
+    right: 4px;
+    width: 5px;
+    opacity: 0.75;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #504c4c;
+}
