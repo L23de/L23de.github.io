@@ -13,7 +13,7 @@ const barStyle = "{}" // CSS for the scroll area's scrollbar
 <template>
     <div id="career-entry">
         <div id="logo">
-            <img :src="careerData[entryData].logo_url" />
+            <img :src="careerData[entryData].logo_url" :alt="careerData[entryData].company + ' Logo'" />
         </div>
 
         <div id="content">

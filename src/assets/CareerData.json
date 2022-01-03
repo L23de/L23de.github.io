@@ -1,7 +1,7 @@
 [
     {
         "company": "Optum",
-        "logo_url": "/src/assets/optum.png",
+        "logo_url": "/images/optum.png",
         "positions": [
             {
                 "title": "Software Engineer Intern",
@@ -13,7 +13,7 @@
     },
     {
         "company": "Lehigh University",
-        "logo_url": "/src/assets/lehigh.svg",
+        "logo_url": "/images/lehigh.svg",
         "positions": [
             {
                 "title": "Junior Systems Administrator",
@@ -37,7 +37,7 @@
     },
     {
         "company": "JHU Engineering Innovation",
-        "logo_url": "/src/assets/jhu.png",
+        "logo_url": "/images/jhu.png",
         "positions": [
             {
                 "title": "Summer Program Participant",
