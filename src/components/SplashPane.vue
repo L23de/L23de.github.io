@@ -15,7 +15,7 @@
 <style scoped lang="scss">
 #splash {
     background: #ffa86d;
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
     }
 
     h1 {
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 2rem;
     }
 

@@ -25,6 +25,9 @@ const barStyle = "{}" // CSS for the scroll area's scrollbar
                 <div id="position" v-for="position in careerData[entryData].positions" :key="position" >
                     <h4 id="title" v-html="position.title"></h4>
                     <h5 id="time" v-html="position.time"></h5>
+                    <div id="skills">
+                        <q-btn id="skill-btns" v-for="skill in position.skills" :key="skill" :ripple="false" outline rounded :label="skill" />
+                    </div>
                     <p id="position-content" v-html="position.summary"></p>
                 </div>
             </div>
@@ -71,13 +74,13 @@ $logoDimensions: 150px;
 
     #company { // h3
         margin-top: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
 #position {
     #title { // h4
-        margin-top: 0;
+        margin-top: 1rem;
         margin-bottom: 0;
     }
 
@@ -87,7 +90,15 @@ $logoDimensions: 150px;
     }
 
     #position-content {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #skills {
+        margin-bottom: 1rem;
+
+        #skill-btns {
+            margin-right: 0.25rem;
+        }
     }
 }
 </style>
