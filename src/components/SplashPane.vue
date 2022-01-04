@@ -17,7 +17,7 @@
 <style scoped lang="scss">
 #splash {
     background: #ffa86d;
-    background-image: url('cartoon.png');
+    background-image: url('/images/cartoon.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 20rem;

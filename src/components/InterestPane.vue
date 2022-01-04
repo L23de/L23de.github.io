@@ -1,10 +1,11 @@
 <script setup>
+import { QBtn } from 'quasar'
 </script>
 
 <template>
     <div id="hobbies" class="pane">
         <h2 class="header">My interests...</h2>
-        <!-- Brief resume -->
+        <q-btn outline rounded label="Work In Progress" size="5rem" :ripple="false" />
     </div>
 </template>
 
