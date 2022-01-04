@@ -19,7 +19,7 @@
     background: #ffa86d;
     background-image: url('/images/cartoon.png');
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: 92% 100%;
     background-size: 20rem;
     min-height: 50vh;
     
