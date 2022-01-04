@@ -7,7 +7,7 @@
             <h1>👋 I'm Lester Huang</h1>
             <h5>A lifelong learner 📖 with a desire for adventure 🗺️</h5>
             <div id="splash-blurb">
-                <p>When I was a kid, I was very picky and scared to try new things (especially food), so to recoup all those lost experiences, I aspire to seek discomfort in every aspect of my life</p>
+                <p>When I was a kid (still am of sorts), I was very picky and scared to try new things (especially food), so to recoup all those lost experiences, I aspire to seek discomfort in every aspect of my life</p>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 20rem;
-    height: 50vh;
+    min-height: 50vh;
     
     #splash-text {
         display: flex;
