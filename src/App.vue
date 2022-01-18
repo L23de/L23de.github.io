@@ -12,6 +12,6 @@ import { QScrollArea } from 'quasar'
   <NavBar />
   <SplashPane />
   <CareerPane />
-  <InterestPane />
+  <!-- <InterestPane /> -->
   <ContactPane />
 </template>
