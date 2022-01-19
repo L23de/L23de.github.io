@@ -16,7 +16,8 @@ const routes = [
         path: '/interests', component: () => import('@/views/InterestsPage.vue'),
     },
     {
-        path: '/404', component: () => import('@/views/404Page.vue'),
+        // Catch all for undefined URLs
+        path: '/:pathMatch(.*)*', component: () => import('@/views/404Page.vue'),
     },
 ];
 

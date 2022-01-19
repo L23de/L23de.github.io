@@ -5,3 +5,21 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.page {
+    @media (max-width: $breakpoint-sm) {
+        padding-inline: 25px;
+    }
+
+    @media (min-width: #{$breakpoint-sm + 1px}) and (max-width: $breakpoint-md) {
+        padding-inline: 50px;
+    }
+
+    @media (min-width: #{$breakpoint-md + 1px}) and (max-width: $breakpoint-lg) {
+        padding-inline: 100px;
+    }
+
+    @media (min-width: #{$breakpoint-lg + 1px}) {
+        padding-inline: 150px;
+    }
+}

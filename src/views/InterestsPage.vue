@@ -1,5 +1,5 @@
 <template>
-    <div>Interests Page</div>
+    <div class="page">Interests Page</div>
 </template>
 
 <script lang="ts">

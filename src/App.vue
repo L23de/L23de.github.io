@@ -4,9 +4,14 @@
     <router-link to="/me">About Me</router-link>
     <router-link to="/work">Experience</router-link>
     <router-link to="/interests">Interests</router-link>
-    <!-- <div class="dot"></div> -->
   </nav>
-  <router-view></router-view>
+  <!-- <router-view></router-view> -->
+  <router-view v-slot="{ Component }">
+    <transition name="route" mode="out-in">
+      <component :is="Component">
+      </component>
+    </transition>
+  </router-view>
 </template>
 
 <script setup lang="ts">
@@ -37,11 +42,12 @@ onMounted(() => {
 $navHeight: 60px;
 
 body {
-  padding-top: $navHeight;
+  padding-top: #{1.1 * $navHeight};
 }
 
-// References:
-// Scrolling down hide: https://www.youtube.com/watch?v=Q_XZk5Vnujw
+// NavMenu Interactions
+// Scroll Hide: https://www.youtube.com/watch?v=Q_XZk5Vnujw
+// Hover Underline: https://www.youtube.com/watch?v=aswRKAjjWuE
 .navMenu {
   position: fixed;
   height: $navHeight;
@@ -49,19 +55,63 @@ body {
   top: 0;
   left: 0;
   background: $primary;
-  display: flex;
   align-items: center;
-  transition: transform 0.4s;
   margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.4s;
+
   
   a {
+    position: relative;
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
     margin: 0 0.5rem;
+  }
+
+  a:after {
+    content: "";
+    position: absolute;
+    background-color: #fddb3a;
+    height: 0.2rem;
+    width: 0;
+    left: 0;
+    bottom: -0.2rem;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #fddb3a;
+  }
+
+  a:hover:after {
+    width: 100%;
   }
 }
 
 .navMenu--hidden {
   transform: translateY(#{-1 * $navHeight});
+}
+
+
+// Router Transitions
+// Reference: https://www.youtube.com/watch?v=X4I6zUEM40A
+.router-enter-from {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.route-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.route-leave-active {
+  transition: all 0.3s ease-in
 }
 </style>

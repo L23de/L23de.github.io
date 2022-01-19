@@ -1,5 +1,5 @@
 <template>
-    <div>404 Page</div>
+    <div class="page">404 Page</div>
 </template>
 
 <script lang="ts">
