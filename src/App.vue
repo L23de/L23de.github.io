@@ -1,7 +1,7 @@
 <template>
   <nav class="navMenu">
     <router-link to="/">Home</router-link>
-    <router-link to="/me">About Me</router-link>
+    <router-link to="/me">About</router-link>
     <router-link to="/work">Experience</router-link>
     <router-link to="/interests">Interests</router-link>
   </nav>

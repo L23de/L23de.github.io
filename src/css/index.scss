@@ -16,7 +16,7 @@ body {
     }
 
     @media (min-width: #{$breakpoint-sm + 1px}) and (max-width: $breakpoint-md) {
-        padding-inline: 75px;
+        padding-inline: 50px;
     }
 
     @media (min-width: #{$breakpoint-md + 1px}) and (max-width: $breakpoint-lg) {
@@ -27,7 +27,6 @@ body {
         padding-inline: 20vw;
     }
 
-    // position: fixed;
     padding-top: #{1.1 * $navHeight};
     width: 100%;
     height: 100%;
@@ -39,8 +38,33 @@ body {
 h1 {
     font-size: 6rem;
     font-weight: 500;
+    margin-block: 0;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-block: 0;
 }
 
 h3 {
     font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    border-bottom: 2px solid black;
+    padding-bottom: 7px;
+}
+
+#intro {
+    display: flex;
+    padding-top: 10vh;
+    flex-direction: column;
+}
+
+#emoji {
+    font-size: 48px;
 }

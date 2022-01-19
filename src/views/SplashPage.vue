@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <div id="intro">
-            <span id="wave">👋</span>
+            <span id="emoji" class="wave">👋</span>
             <h1>I'm Lester Huang</h1>
             <h3 id="desc">A lifelong learner 📖 with a desire for adventure 🗺️</h3>
         </div>
@@ -18,30 +18,10 @@
 // import { QBtn } from 'quasar'
 </script>
 
-<style scoped lang="scss">
-
-h1 {
-    margin-block: 0;
-}
-
-h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-#intro {
-    display: flex;
-    padding-top: 10vh;
-    flex-direction: column;
-
-    #wave {
-        font-size: 48px;
-        
-        &:hover {
-            animation: wave-animation 2.5s infinite;
-            transform-origin: 48px 48px;
-        }
-    }
+<style lang="scss">
+.wave:hover {
+    animation: wave-animation 2.5s infinite;
+    transform-origin: 48px 48px;
 }
 
 #contact {
