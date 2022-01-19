@@ -5,7 +5,7 @@
     <router-link to="/work">Experience</router-link>
     <router-link to="/interests">Interests</router-link>
   </nav>
-  <!-- <router-view></router-view> -->
+  
   <router-view v-slot="{ Component }">
     <transition name="route" mode="out-in">
       <component :is="Component">
@@ -15,8 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import Header from '@/components/Header.vue'
-
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -39,8 +37,6 @@ onMounted(() => {
 <style lang="scss">
 @import '@/css/index.scss';
 
-$navHeight: 60px;
-
 body {
   padding-top: #{1.1 * $navHeight};
 }
@@ -54,7 +50,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: $primary;
+  // background: $primary;
   align-items: center;
   margin-bottom: 5rem;
   display: flex;
@@ -65,7 +61,7 @@ body {
   a {
     position: relative;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0 0.5rem;
   }
@@ -73,7 +69,7 @@ body {
   a:after {
     content: "";
     position: absolute;
-    background-color: #fddb3a;
+    background-color: white;
     height: 0.2rem;
     width: 0;
     left: 0;
@@ -82,7 +78,7 @@ body {
   }
 
   a:hover {
-    color: #fddb3a;
+    color: white;
   }
 
   a:hover:after {
