@@ -50,7 +50,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  // background: $primary;
+  background: $primary;
   align-items: center;
   margin-bottom: 5rem;
   display: flex;
