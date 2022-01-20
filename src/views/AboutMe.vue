@@ -29,7 +29,6 @@
         filter: grayscale(100%);
         opacity: 0.7;
         border-radius: 50%;
-        border: 2px solid black;
         margin: 0px 20px 15px 20px;
         background: $primary;
         z-index: -1;

@@ -40,7 +40,6 @@ const props = defineProps({
     height: auto;
     border-radius: 20px;
     background-color: white;
-    outline: 2px solid black;
     margin: 3px;
     margin-bottom: 1rem;
     transition: 0.5s ease;

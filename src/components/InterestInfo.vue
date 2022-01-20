@@ -20,7 +20,7 @@ const props = defineProps({
 .interest-pic {
     display: block;
     border-radius: 10px;
-    width: 100%;
-    margin-inline: auto;
+    width: 97%;
+    margin-inline: 2px;
 }
 </style>
