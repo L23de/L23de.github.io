@@ -1,11 +1,11 @@
 <template>
-    <div :id="company+'-info'" class="work-content">
+    <div :id="company" class="work-content">
         <a :href="website" target="_blank"><img :src="logo_src" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'"/></a>
-        <div :id="company+'-pos-'+index" v-for="(position: posConfig, index) in positions">
-            <p class="pos-title">{{position['title']}}</p>
+        <div :id="company+'-pos-'+index" v-for="(position, index) in positions" class="pos-info">
+            <h3 class="pos-title">{{position['title']}}</h3>
             <p class="pos-date">{{position['dates']}}</p>
             <div id="pos-skills">
-                <q-chip v-for="skill in position['skills']" :label="skill"/>
+                <q-chip v-for="skill in position['skills']" :label="skill" :ripple="false" outline rounded/>
             </div>
             <div id="pos-desc">
                 <p v-for="paragraph in position['desc']">{{paragraph}}</p>
@@ -44,9 +44,34 @@ const props = defineProps({
     margin: 3px;
     margin-bottom: 1rem;
     transition: 0.5s ease;
+    filter: grayscale(100%);
+    opacity: 0.7;
 
     &:hover {
-        opacity: 0.85;
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+}
+
+// Left most child gets aligned properly
+.q-chip:nth-child(1) {
+    margin-left: 0;
+}
+
+.pos-info {
+    margin-bottom: 2rem;
+
+    .pos-title {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    .pos-date {
+        margin-top: -5px;
+        margin-bottom: 0;
+    }
+
+    .pos-desc {
     }
 }
 </style>

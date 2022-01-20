@@ -7,7 +7,7 @@
             "title": "Junior Systems Administrator",
             "dates": "January 2022 - Present",
             "desc": [
-                "I am excited to be working under George Todd as a JSA under Lehigh's CSE department. There, I hope to learn about the intricacies of networking and more niche topics that may not be in a typical CS coursework through the management of Lehigh's network of VMs powered by Sun Microsystem machines and various side projects"
+                "I am excited to be working under George Todd as a JSA under Lehigh's CSE department. I hope to learn about the intricacies of networking and more niche topics that may not be covered in typical CS coursework through the management of Lehigh's network of VMs powered by Sun Microsystem machines and various side projects"
             ],
             "skills": []
         },
@@ -16,7 +16,7 @@
             "dates": "September-December 2021",
             "desc": [
                 "Passing a CS class is one thing, but being able to teach someone else and guide them through a course is another. I took the opportunity to serve as a TA/grader for CSE 109 to do just that.", 
-                "Especially with how the CS course structure at Lehigh is laid out, languages and concepts don't always coincide or are not always taught in \"chronological\" order, so being able to refresh myself on such topics and mentor my fellow underclassmen are two great pluses"
+                "The CS course structure at Lehigh can be confusing for students, languages and concepts don't always coincide or are not always taught in \"chronological\" order, so being able to refresh myself on such topics and mentor my fellow colleagues were two great pluses."
             ],
             "skills": ["C Programming Language"]
         },
@@ -25,7 +25,7 @@
             "dates": "September 2019 - Expected Grad. December 2022",
             "desc": [
                 "My alma mater. Here, I was able to expand my perspectives on the world and grow in all such ways", 
-                "Initially coming in as a computer engineer (Thanks to the JHU Engineering Innovation program), I switched my declaration to strictly computer science after my first programming class, CSE 002. There, I wrote my first \"Hello World\" program in Java and here we are..."
+                "Initially coming in as a computer engineer (Thanks to the JHU Engineering Innovation program), I switched my major to strictly computer science after my first programming class, CSE 002. There, I wrote my first \"Hello World\" program in Java and here we are..."
             ],
             "skills": ["Algorithms", "Various Programming Concepts"]
         }

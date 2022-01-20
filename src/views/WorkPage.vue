@@ -3,7 +3,7 @@
         <div id="work-header">
             <h2 class="heading">My SWE Journey 👨‍💻</h2>
             <div></div>
-            <q-btn outline no-caps icon="fas fa-file-pdf" label="Grab My Resume" size="md" to="/resume.pdf" target="_blank" padding="sm"/>
+            <q-btn id="pdf-resume" outline no-caps icon="fas fa-file-pdf" label="Grab My Resume" size="lg" to="/resume.pdf" target="_blank" padding="sm"/>
         </div>
         
 
@@ -14,7 +14,7 @@
                 animated
                 padding
                 navigation
-                height="60vh"
+                height="80vh"
                 control-color="blue-grey-9"
                 navigation-icon="fas fa-circle"
                 class="transparent text-black"
@@ -45,10 +45,13 @@ const slide = ref(workData[0]['company']) // First slide is the most recent comp
     justify-content: space-between;
 
     #work-header {
-    // margin-bottom: 0rem;
-
         h2 {
             margin-bottom: 1rem;
+        }
+
+        #pdf-resume {
+            margin-bottom: 1rem;
+            margin-right: 1rem;
         }
     }
 
@@ -60,5 +63,6 @@ const slide = ref(workData[0]['company']) // First slide is the most recent comp
 
 .q-carousel__slide {
     padding-inline: 0;
+    height: 100%;
 }
 </style>
