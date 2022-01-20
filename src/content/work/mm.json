@@ -1,11 +1,14 @@
 {
     "company": "Millennium Management",
-    "logo_src": "../images/CompanyImg.png",
+    "website": "https://www.mlp.com/",
+    "logo_src": "/src/content/images/mm.png",
     "positions": [
         {
             "title": "Quality Assurance Analyst Intern",
             "dates": "June - August 2022",
-            "desc": "",
+            "desc": [
+                ""
+            ],
             "skills": []
         }
     ]

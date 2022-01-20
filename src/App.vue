@@ -15,7 +15,7 @@
     </router-view>
     
     <footer class="footer">
-      <div class="contact center" v-if="!splashPage">
+      <div class="contact center-flex" v-if="!splashPage">
           <q-btn round icon="fab fa-linkedin-in" type="a" href="https://www.linkedin.com/in/lesterhuang/" target="_blank" size="0.8rem" unelevated />
           <q-btn round icon="far fa-envelope" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="0.8rem" unelevated />
           <q-btn round icon="fab fa-github" type="a" href="https://github.com/L23de" target="_blank" size="0.8rem" unelevated />

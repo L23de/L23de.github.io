@@ -33,6 +33,7 @@
         margin: 0px 20px 15px 20px;
         background: $primary;
         z-index: -1;
+        transition: 0.5s ease;
 
         &:hover {
             filter: grayscale(0%);

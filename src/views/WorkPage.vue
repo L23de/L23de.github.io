@@ -13,12 +13,9 @@
                 swipeable
                 animated
                 padding
-                arrows
                 navigation
-                height="50vh"
+                height="60vh"
                 control-color="blue-grey-9"
-                prev-icon="fas fa-chevron-left"
-                next-icon="fas fa-chevron-right"
                 navigation-icon="fas fa-circle"
                 class="transparent text-black"
                 >
@@ -48,7 +45,7 @@ const slide = ref(workData[0]['company']) // First slide is the most recent comp
     justify-content: space-between;
 
     #work-header {
-    margin-bottom: 1.5rem;
+    // margin-bottom: 0rem;
 
         h2 {
             margin-bottom: 1rem;
@@ -59,5 +56,9 @@ const slide = ref(workData[0]['company']) // First slide is the most recent comp
         flex-grow: 1;
         height: 100%;
     }
+}
+
+.q-carousel__slide {
+    padding-inline: 0;
 }
 </style>
