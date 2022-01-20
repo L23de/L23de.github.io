@@ -1,12 +1,11 @@
 <template>
     <div id="work" class="content-wrap">
         <div id="work-header">
-            <h2 class="heading">My SWE Journey 👨‍💻</h2>
+            <h2 class="heading">My SWE Journey <span class="emoji">👨‍💻</span></h2>
             <div></div>
             <q-btn id="pdf-resume" outline no-caps icon="fas fa-file-pdf" label="Grab My Resume" size="lg" to="/resume.pdf" target="_blank" padding="sm"/>
         </div>
         
-
         <div id="work-body">
             <q-carousel
                 v-model="slide"
@@ -14,6 +13,8 @@
                 animated
                 padding
                 navigation
+                transition-prev="slide-right"
+                transition-next="slide-left"
                 control-color="blue-grey-9"
                 navigation-icon="fas fa-circle"
                 class="transparent text-black full-height"

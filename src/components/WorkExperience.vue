@@ -4,10 +4,10 @@
         <div :id="company+'-pos-'+index" v-for="(position, index) in positions" class="pos-info">
             <h3 class="pos-title">{{position['title']}}</h3>
             <p class="pos-date">{{position['dates']}}</p>
-            <div id="pos-skills">
+            <div class="pos-skills">
                 <q-chip v-for="skill in position['skills']" :label="skill" :ripple="false" outline rounded/>
             </div>
-            <div id="pos-desc">
+            <div class="pos-desc">
                 <p v-for="paragraph in position['desc']">{{paragraph}}</p>
             </div>
         </div>
@@ -26,7 +26,7 @@ interface posConfig {
 
 const props = defineProps({
     company: { type: String, required: true },
-    website: { type: String, required: false },
+    website: { type: String, required: true },
     logo_src: { type: String, required: true },
     positions: { type: Object as PropType<Array<posConfig>>, required: true }
 })
@@ -69,9 +69,6 @@ const props = defineProps({
     .pos-date {
         margin-top: -5px;
         margin-bottom: 0;
-    }
-
-    .pos-desc {
     }
 }
 </style>
