@@ -1,14 +1,14 @@
 <template>
-    <div class="page">
+    <div class="content-wrap simple-page">
         <div class="p-intro">
             <!-- CSS Emoji Wave: https://jarv.is/notes/css-waving-hand-emoji/ -->
             <div class="wave emoji">👋</div>
             <h1>I'm Lester Huang</h1>
             <h3>A lifelong learner 📖 with a desire for adventure 🗺️</h3>
         </div>
-        <div id="contact" class="last-element">
-            <q-btn round icon="far fa-envelope-open" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="1.1rem" unelevated />
+        <div class="contact last-element">
             <q-btn round icon="fab fa-linkedin-in" type="a" href="https://www.linkedin.com/in/lesterhuang/" target="_blank" size="1.1rem" unelevated />
+            <q-btn round icon="far fa-envelope" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="1.1rem" unelevated />
             <q-btn round icon="fab fa-github" type="a" href="https://github.com/L23de" target="_blank" size="1.1rem" unelevated />
             <q-btn round icon="fab fa-instagram" type="a" href="https://www.instagram.com/lester.302d/" target="_blank" size="1.1rem" unelevated />
         </div>
@@ -19,16 +19,10 @@
 // import { QBtn } from 'quasar'
 </script>
 
-<style lang="scss">
-.wave:hover {
+<style scoped lang="scss">
+.wave {
     animation: wave-animation 2.5s infinite;
     transform-origin: 48px 48px;
-}
-
-#contact {
-    color: black;
-    display: flex;
-    flex-direction: row;
 }
 
 @keyframes wave-animation {

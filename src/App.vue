@@ -1,21 +1,32 @@
 <template>
-  <nav class="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/me">About</router-link>
-    <router-link to="/work/1">Experience</router-link>
-    <router-link to="/interests">Interests</router-link>
-  </nav>
-  
-  <router-view v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
-      <component :is="Component">
-      </component>
-    </transition>
-  </router-view>
+  <div class="page-container">
+    <nav class="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/me">About</router-link>
+      <router-link to="/work">Experience</router-link>
+      <router-link to="/interests">Interests</router-link>
+    </nav>
+    
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component">
+        </component>
+      </transition>
+    </router-view>
+    
+    <footer class="footer">
+      <div class="contact center" v-if="!splashPage">
+          <q-btn round icon="fab fa-linkedin-in" type="a" href="https://www.linkedin.com/in/lesterhuang/" target="_blank" size="0.8rem" unelevated />
+          <q-btn round icon="far fa-envelope" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="0.8rem" unelevated />
+          <q-btn round icon="fab fa-github" type="a" href="https://github.com/L23de" target="_blank" size="0.8rem" unelevated />
+          <q-btn round icon="fab fa-instagram" type="a" href="https://www.instagram.com/lester.302d/" target="_blank" size="0.8rem" unelevated />
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 onMounted(() => {
   const nav: Element = document.querySelector('.nav')!;
@@ -34,12 +45,18 @@ onMounted(() => {
 })
 </script>
 
+<script lang="ts">
+export default {
+  computed: {
+    splashPage() {
+      return this.$route.path == '/';
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 @import '@/css/index.scss';
-
-body {
-  padding-top: #{1.1 * $navHeight};
-}
 
 // Nav Interactions
 // Scroll Hide: https://www.youtube.com/watch?v=Q_XZk5Vnujw
@@ -51,11 +68,12 @@ body {
   top: 0;
   left: 0;
   background: $primary;
-  align-items: center;
-  margin-bottom: 5rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   transition: transform 0.4s;
+  overflow: auto;
+  z-index: 10; // Makes nav appear on top of everything
 
   
   a {
@@ -97,7 +115,6 @@ body {
 .fade-leave-active {
   transition: opacity 0.2s ease;
 }
-
 
 .fade-enter-from,
 .fade-leave-to {

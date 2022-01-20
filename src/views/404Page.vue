@@ -1,19 +1,12 @@
 <template>
-    <div class="page">
+    <div class="content-wrap simple-page">
         <div class="p-intro">
             <span class="emoji">😕</span>
             <h2>Uh oh, looks like you got lost</h2>
-            <h3>Let's get you back <a href="/">home</a></h3>
+            <h3>Let's get you back <a href="/">home</a>!</h3>
         </div>
     </div>
 </template>
 
-<script lang="ts">
-
+<script setup lang="ts">
 </script>
-
-<style lang="scss">
-.heading {
-    // max-width: 600px;
-}
-</style>

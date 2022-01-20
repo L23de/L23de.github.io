@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="content-wrap">
         <h2 class="heading">Other Hobbies 🏀</h2>
     </div>
 </template>

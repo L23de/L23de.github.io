@@ -6,9 +6,10 @@ import WorkPage from '@/views/WorkPage.vue';
 const routes = [
     { path: '/', component: SplashPage },
     { path: '/me', component: () => import('@/views/AboutMe.vue') },
-    { path: '/work', redirect: '/work/1' },
-    { path: '/work/:id', component: WorkPage },
+    { path: '/work', component: WorkPage },
     { path: '/interests', component: () => import('@/views/InterestsPage.vue') },
+    { path: '/resume', redirect: (_: any) => { window.location.replace('/resume.pdf'); } 
+    },
     {
         // Catch all for undefined URLs
         path: '/:pathMatch(.*)*', component: () => import('@/views/404Page.vue'),

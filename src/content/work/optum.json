@@ -1,0 +1,12 @@
+{
+    "company": "Optum",
+    "logo_src": "../images/CompanyImg.png",
+    "positions": [
+        {
+            "title": "Software Engineer Intern",
+            "dates": "June - August 2021",
+            "desc": "As my first professional software engineering internship, I learned a lot about the general software development lifecycle, from initial planning and researching phases all the way to testing and deployment.\nI had a blast working on a brand new internal chatbot for Optum's cloud onboarding team, with the overall goal of reducing the onboarding process from 30+ days down to one hour. This was something that would significantly impact Optum's infrastructure, with the ability to move on-site services to the cloud quickly, which in turn, would affect UnitedHealth Group's (Optum's parent company) services. So I am very fortunate and thankful that I was able to wear various hats and work on something impactful as my first foray into the world of software engineering",
+            "skills": ["SDLC", "Python", "REST APIs", "GraphQL", "Azure", "CI/CD"]
+        }
+    ]
+}

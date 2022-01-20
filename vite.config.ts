@@ -20,6 +20,6 @@ export default defineConfig({
     quasar({
       autoImportComponentCase: 'combined',
       sassVariables: 'src/css/quasar-variables.sass'
-    })
+    }),
   ]
 })
