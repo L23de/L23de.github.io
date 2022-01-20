@@ -1,9 +1,10 @@
 <template>
     <div class="page">
-        <div id="intro">
-            <span id="emoji" class="wave">👋</span>
+        <div class="p-intro">
+            <!-- CSS Emoji Wave: https://jarv.is/notes/css-waving-hand-emoji/ -->
+            <span class="emoji wave">👋</span>
             <h1>I'm Lester Huang</h1>
-            <h3 id="desc">A lifelong learner 📖 with a desire for adventure 🗺️</h3>
+            <h3>A lifelong learner 📖 with a desire for adventure 🗺️</h3>
         </div>
         <div id="contact">
             <q-btn round icon="far fa-envelope-open" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="1.1rem" unelevated />
@@ -18,7 +19,7 @@
 // import { QBtn } from 'quasar'
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .wave:hover {
     animation: wave-animation 2.5s infinite;
     transform-origin: 48px 48px;

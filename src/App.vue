@@ -1,5 +1,5 @@
 <template>
-  <nav class="navMenu">
+  <nav class="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/me">About</router-link>
     <router-link to="/work">Experience</router-link>
@@ -18,16 +18,16 @@
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  const navMenu: Element = document.querySelector('.navMenu')!;
+  const nav: Element = document.querySelector('.nav')!;
   let lastScrollY: number = window.scrollY;
 
   window.addEventListener('scroll', () => {
     if (lastScrollY > 30 && lastScrollY < window.scrollY) {
       // User scrolled down
-      navMenu.classList.add('navMenu--hidden');
+      nav.classList.add('nav--hidden');
     } else {
       // User scrolled back up
-      navMenu.classList.remove('navMenu--hidden');
+      nav.classList.remove('nav--hidden');
     }
     lastScrollY = window.scrollY;
   });
@@ -41,10 +41,10 @@ body {
   padding-top: #{1.1 * $navHeight};
 }
 
-// NavMenu Interactions
+// Nav Interactions
 // Scroll Hide: https://www.youtube.com/watch?v=Q_XZk5Vnujw
 // Hover Underline: https://www.youtube.com/watch?v=aswRKAjjWuE
-.navMenu {
+.nav {
   position: fixed;
   height: $navHeight;
   width: 100%;
@@ -86,7 +86,7 @@ body {
   }
 }
 
-.navMenu--hidden {
+.nav--hidden {
   transform: translateY(#{-1 * $navHeight});
 }
 

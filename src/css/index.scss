@@ -57,14 +57,42 @@ h3 {
 .heading {
     border-bottom: 2px solid black;
     padding-bottom: 7px;
+    margin-bottom: 2rem;
 }
 
-#intro {
+.p-intro {
     display: flex;
     padding-top: 10vh;
     flex-direction: column;
 }
 
-#emoji {
+.emoji {
     font-size: 48px;
+}
+
+// Scrollbar
+// Firefox Support
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #828282 #555;
+}
+
+// Chrome, Edge, and Safari Support
+*::-webkit-scrollbar {
+    width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #828282;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
 }
