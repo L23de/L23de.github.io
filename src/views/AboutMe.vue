@@ -23,10 +23,22 @@
         font-size: 1.15rem;
     }
 
+    .filtered:hover {
+        filter: grayscale(0%);
+    }
+
     img {
+        filter: grayscale(100%);
+        opacity: 0.7;
         border-radius: 50%;
         border: 2px solid black;
         margin: 0px 20px 15px 20px;
+        background: $primary;
+
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
 
         @media (max-width: $breakpoint-sm) {
             display: block;
