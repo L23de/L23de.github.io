@@ -7,7 +7,7 @@
   </nav>
   
   <router-view v-slot="{ Component }">
-    <transition name="route" mode="out-in">
+    <transition name="fade" mode="out-in">
       <component :is="Component">
       </component>
     </transition>
@@ -92,22 +92,15 @@ body {
 
 
 // Router Transitions
-// Reference: https://www.youtube.com/watch?v=X4I6zUEM40A
-.router-enter-from {
+// Reference: https://learnvue.co/2021/01/4-awesome-examples-of-vue-router-transitions/#-1-fade-vue-router-transitions
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
-  transform: translateX(100px);
-}
-
-.route-enter-active {
-  transition: all 0.3s ease-out;
-}
-
-.route-leave-to {
-  opacity: 0;
-  transform: translateX(-100px);
-}
-
-.route-leave-active {
-  transition: all 0.3s ease-in
 }
 </style>
