@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <h2 class="heading">About Me 🤝</h2>
+        <h2 class="heading handshake">About Me <span class="emoji">🤝</span></h2>
         <div id="about-me">
             <div id="about-me-content">
                 <img src="/logo.png" alt="Picture of Lester" width="300" height="300"/>
@@ -17,7 +17,7 @@
 <script lang="ts">
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 #about-me {
     overflow: auto;
 

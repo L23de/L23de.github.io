@@ -2,7 +2,7 @@
     <div class="page">
         <div class="p-intro">
             <!-- CSS Emoji Wave: https://jarv.is/notes/css-waving-hand-emoji/ -->
-            <span class="emoji wave">👋</span>
+            <div class="wave emoji">👋</div>
             <h1>I'm Lester Huang</h1>
             <h3>A lifelong learner 📖 with a desire for adventure 🗺️</h3>
         </div>
@@ -19,7 +19,7 @@
 // import { QBtn } from 'quasar'
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .wave:hover {
     animation: wave-animation 2.5s infinite;
     transform-origin: 48px 48px;
