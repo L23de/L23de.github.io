@@ -1,44 +1,32 @@
 <template>
-    <div class="content-wrap">
+    <div id="work" class="content-wrap">
         <div id="work-header">
             <h2 class="heading">My SWE Journey 👨‍💻</h2>
             <div></div>
             <q-btn outline no-caps icon="fas fa-file-pdf" label="Grab My Resume" size="md" to="/resume.pdf" target="_blank" padding="sm"/>
         </div>
         
+
         <div id="work-body">
             <q-carousel
+                v-model="slide"
                 swipeable
                 animated
-                prev-icon="fas fa-arrow-left"
-                next-icon="fas fa-arrow-right"
                 padding
                 arrows
                 navigation
+                height="50vh"
+                control-color="blue-grey-9"
+                prev-icon="fas fa-chevron-left"
+                next-icon="fas fa-chevron-right"
                 navigation-icon="fas fa-circle"
-                class="bg-purple text-white rounded-borders"
+                class="transparent text-black"
                 >
-
-                <q-carousel-slide name="style" class="text-center" > 
+                <q-carousel-slide :name="workDatum['company']" v-for="workDatum in workData">
                     <q-scroll-area class="fit">
-                        <q-icon name="style" size="56px" />
-                        <q-icon name="style" size="56px" />
-                        <div class="q-mt-md">
-                            lorem ipsum
-                        </div>
-                        <div class="q-mt-md">
-                            lorem ipsum
-                        </div>
-                        <div class="q-mt-md">
-                            lorem ipsum
-                        </div>
-                        <div class="q-mt-md">
-                            lorem ipsum
-                        </div>
-                        <!-- <WorkExperience v-for="workDatum in workData" v-bind="workDatum"></WorkExperience> -->
+                        <WorkExperience v-bind="workDatum"></WorkExperience>
                     </q-scroll-area>
                 </q-carousel-slide>
-                
             </q-carousel>
         </div>
     </div>
@@ -49,22 +37,27 @@ import { ref } from 'vue'
 import workData from '@/content/work';
 import WorkExperience from "../components/WorkExperience.vue";
 
-const slide = ref('style')
-
-console.log(workData[0]);
+const slide = ref(workData[0]['company']) // First slide is the most recent company
 </script>
 
 <style lang="scss">
-#work-header {
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+
+    #work-header {
     margin-bottom: 1.5rem;
 
-    h2 {
-        margin-bottom: 1rem;
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    #work-body {
+        flex-grow: 1;
+        height: 100%;
     }
 }
-
-// #work-body {
-//     overflow: auto;
-//     height: 100%;
-// }
 </style>

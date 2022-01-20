@@ -1,8 +1,10 @@
 <template>
     <div>
-        {{company}}
-        {{logo_src}}
-        {{positions}}
+        <p>
+            {{company}}
+            {{logo_src}}
+            {{positions}}
+        </p>
     </div>
 </template>
 
