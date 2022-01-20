@@ -1,0 +1,149 @@
+#app {
+    font-family: $sans-serif-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    @media (max-width: $breakpoint-sm) {
+        padding-inline: 25px;
+    }
+
+    @media (min-width: #{$breakpoint-sm + 1px}) and (max-width: $breakpoint-md) {
+        padding-inline: 50px;
+    }
+
+    @media (min-width: #{$breakpoint-md + 1px}) and (max-width: $breakpoint-lg) {
+        padding-inline: 150px;
+    }
+
+    @media (min-width: #{$breakpoint-lg + 1px}) {
+        padding-inline: 20vw;
+    }
+
+    width: 100%;
+    padding-top: #{2 * $navHeight};
+    padding-bottom: #{3 * $footerHeight};
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin-block: 0;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-block: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.heading {
+    border-bottom: 2px solid black;
+    padding-bottom: 7px;
+    margin-bottom: 2rem;
+    animation: shake-animation 0.7s;
+}
+
+.simple-page {
+    padding-top: 20vh;
+}
+
+.p-intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    height: $footerHeight;
+}
+
+.center-block {
+    display: block;
+    margin-inline: auto;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 48px;
+}
+
+// Custom Scrollbar
+// Firefox Support
+* {
+    scrollbar-color: #828282 transparent;
+    scrollbar-width: thin;
+}
+
+// Chrome, Edge, and Safari Support
+*::-webkit-scrollbar {
+    width: 11px;
+    // overflow: hidden;
+}
+
+*::-webkit-scrollbar-track-piece,
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-resizer,
+*::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #828282;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+@keyframes shake-animation {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}

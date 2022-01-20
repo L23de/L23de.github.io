@@ -1,0 +1,17 @@
+{
+    "company": "Millennium Management",
+    "website": "https://www.mlp.com/",
+    "logo_src": "/src/content/images/mm.png",
+    "positions": [
+        {
+            "title": "Incoming Quality Assurance Analyst Intern",
+            "dates": "June - August 2022",
+            "desc": [
+                "QA will be a new frontier for me, another way to seek discomfort and learn many new things! As a QA Analyst, I expect to pick up many new things about good software development practices. The world of developers and testers are converging, with the line between the two blurring, with many new projects requiring a developer to create tests or a tester to fix a bug. So I'm very glad to be able to step into this opportunity as my second professional internship!",
+                "Along with learning new software development practices, I expect to be thrown into a large, existing codebase, where I will have to figure out the general flow and integrate new changes. This will also be a first. Continuous Integration and Delivery (CI/CD) and Automation Testing (and their frameworks) will also be new concepts I expect to pick up along the way.",
+                "Millennium, one of the world's leading alternative investment management firms,  will also be a great way for me to enter the fintech space, where I believe great innovation and disruption is ripe."
+            ],
+            "skills": ["Java", "Maven", "CI/CD", "SQL"]
+        }
+    ]
+}
