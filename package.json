@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && cd dist && cp index.html 404.html && cd ..",
     "preview": "vite preview",
-    "deploy": "yarn build; gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build-deploy": "yarn build && yarn deploy"
   },
   "dependencies": {
     "@quasar/extras": "^1.12.4",

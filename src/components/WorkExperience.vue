@@ -20,7 +20,7 @@ import { PropType } from 'vue';
 interface posConfig {
     title: string,
     dates: string,
-    desc: string,
+    desc: Array<string>,
     skills: Array<string>
 }
 

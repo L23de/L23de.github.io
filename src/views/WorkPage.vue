@@ -14,15 +14,12 @@
                 animated
                 padding
                 navigation
-                height="80vh"
                 control-color="blue-grey-9"
                 navigation-icon="fas fa-circle"
-                class="transparent text-black"
+                class="transparent text-black full-height"
                 >
                 <q-carousel-slide :name="workDatum['company']" v-for="workDatum in workData">
-                    <q-scroll-area class="fit">
-                        <WorkExperience v-bind="workDatum"></WorkExperience>
-                    </q-scroll-area>
+                    <WorkExperience v-bind="workDatum"></WorkExperience>
                 </q-carousel-slide>
             </q-carousel>
         </div>
@@ -31,7 +28,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import workData from '@/content/work';
+import workData from '../content/work';
 import WorkExperience from "../components/WorkExperience.vue";
 
 const slide = ref(workData[0]['company']) // First slide is the most recent company

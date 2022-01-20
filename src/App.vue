@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, defineComponent } from 'vue'
 
 onMounted(() => {
   const nav: Element = document.querySelector('.nav')!;
@@ -46,13 +46,13 @@ onMounted(() => {
 </script>
 
 <script lang="ts">
-export default {
+export default defineComponent({
   computed: {
-    splashPage() {
+    splashPage(): boolean {
       return this.$route.path == '/';
     }
   }
-}
+})
 </script>
 
 <style lang="scss">

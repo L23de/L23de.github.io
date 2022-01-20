@@ -8,7 +8,7 @@ const routes = [
     { path: '/me', component: () => import('@/views/AboutMe.vue') },
     { path: '/work', component: WorkPage },
     { path: '/interests', component: () => import('@/views/InterestsPage.vue') },
-    { path: '/resume', redirect: (_: any) => { window.location.replace('/resume.pdf'); } 
+    { path: '/resume', redirect: (_: any) => { window.location.replace('/resume.pdf'); return '' } 
     },
     {
         // Catch all for undefined URLs
@@ -16,8 +16,9 @@ const routes = [
     },
 ];
 
+// @ts-ignore <- ignore it
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/'),
     routes,
 });
 
