@@ -1,1 +1,0 @@
-import{_ as e}from"./index.59e90780.js";import{a as s,c as t,b as a}from"./vendor.287a2904.js";const _={},n={class:"content-wrap"},o=a("h2",{class:"heading"},"Other Hobbies \u{1F3C0}",-1),r=[o];function c(d,i){return s(),t("div",n,r)}var h=e(_,[["render",c]]);export{h as default};
