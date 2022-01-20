@@ -87,7 +87,7 @@ export default defineComponent({
   a:after {
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: #a9afb8;
     height: 0.2rem;
     width: 0;
     left: 0;
@@ -96,7 +96,7 @@ export default defineComponent({
   }
 
   a:hover {
-    color: white;
+    color: #a9afb8;
   }
 
   a:hover:after {

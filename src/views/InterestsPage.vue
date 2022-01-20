@@ -14,6 +14,7 @@
                 navigation-icon="fas fa-circle"
                 class="transparent text-black full-height"
                 >
+                
                 <q-carousel-slide :name="interest['name']" v-for="interest in interests">
                     <InterestInfo v-bind="interest"></InterestInfo>
                 </q-carousel-slide>
