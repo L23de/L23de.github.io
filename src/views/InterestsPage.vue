@@ -1,6 +1,6 @@
 <template>
     <div class="content-wrap">
-        <h2 class="heading">Other Hobbies <span class="emoji">🚴</span></h2>
+        <h2 class="heading">Other Hobbies <span class="emoji">&#x1F4F7;</span></h2>
         <div id="interests-body">
             <q-carousel
                 v-model="slide"

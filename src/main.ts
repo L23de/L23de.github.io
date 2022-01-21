@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import { Quasar } from 'quasar';
-import quasarIconSet from 'quasar/icon-set/ionicons-v4';
+import quasarIconSet from 'quasar/icon-set/fontawesome-v5'
 import '@quasar/extras/fontawesome-v5/fontawesome-v5.css';
 import 'quasar/src/css/index.sass';
 

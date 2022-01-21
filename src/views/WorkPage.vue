@@ -1,12 +1,12 @@
 <template>
     <div id="work" class="content-wrap">
         <div id="work-header">
-            <h2 class="heading">My SWE Journey <span class="emoji">👨‍💻</span></h2>
+            <h2 class="heading">My SWE Journey <span class="emoji">&#x1F468;&#x200D;&#x1F4BB;</span></h2>
             <div></div>
             <q-btn id="pdf-resume" outline no-caps icon="fas fa-file-pdf" label="Grab My Resume" size="lg" to="/resume.pdf" target="_blank" padding="sm"/>
         </div>
         
-        <div id="work-body">
+        <div id="work-body" itemscope itemtype="https://schema.org/Person">
             <q-carousel
                 v-model="slide"
                 swipeable

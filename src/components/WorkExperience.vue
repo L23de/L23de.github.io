@@ -1,8 +1,8 @@
 <template>
     <div :id="company" class="work-content">
-        <a :href="website" target="_blank"><img :src="logo_src" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'"/></a>
+        <a :href="website" target="_blank"><img :src="'/images/work/'+shorthand+'.webp'" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'" loading="lazy"/></a>
         <div :id="company+'-pos-'+index" v-for="(position, index) in positions" class="pos-info">
-            <h3 class="pos-title">{{position['title']}}</h3>
+            <h3 class="pos-title" itemprop="jobTitle">{{position['title']}}</h3>
             <p class="pos-date">{{position['dates']}}</p>
             <div class="pos-skills">
                 <q-chip v-for="skill in position['skills']" :label="skill" :ripple="false" outline rounded/>
@@ -25,9 +25,9 @@ interface posConfig {
 }
 
 const props = defineProps({
+    shorthand: { type: String, required: true },
     company: { type: String, required: true },
     website: { type: String, required: true },
-    logo_src: { type: String, required: true },
     positions: { type: Object as PropType<Array<posConfig>>, required: true }
 })
 </script>
@@ -42,14 +42,6 @@ const props = defineProps({
     background-color: white;
     margin: 3px;
     margin-bottom: 1rem;
-    transition: 0.5s ease;
-    filter: grayscale(100%);
-    opacity: 0.7;
-
-    &:hover {
-        filter: grayscale(0%);
-        opacity: 1;
-    }
 }
 
 // Left most child gets aligned properly

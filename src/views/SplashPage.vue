@@ -1,10 +1,10 @@
 <template>
     <div class="content-wrap simple-page">
-        <div class="p-intro">
+        <div class="p-intro" itemscope itemtype="https://schema.org/Person">
             <!-- CSS Emoji Wave: https://jarv.is/notes/css-waving-hand-emoji/ -->
-            <div class="wave emoji">👋</div>
-            <h1>I'm Lester Huang</h1>
-            <h3>A lifelong learner 📖 with a desire for adventure 🗺️</h3>
+            <div class="wave emoji">&#x1F44B;</div>
+            <h1 itemprop="name">I'm Lester Huang</h1>
+            <h3>A lifelong learner &#x1F4D6; with a desire for adventure &#x1F30F;</h3>
         </div>
         <div class="contact last-element">
             <q-btn round icon="fab fa-linkedin-in" type="a" href="https://www.linkedin.com/in/lesterhuang/" target="_blank" size="1.1rem" unelevated />
@@ -14,10 +14,6 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-// import { QBtn } from 'quasar'
-</script>
 
 <style scoped lang="scss">
 .wave {
