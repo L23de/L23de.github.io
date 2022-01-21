@@ -1,11 +1,24 @@
 <template>
   <div class="page-container">
-    <nav class="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/me">About</router-link>
-      <router-link to="/work">Experience</router-link>
-      <router-link to="/interests">Interests</router-link>
-    </nav>
+    <header class="header">
+      <nav class="nav">
+        <router-link to="/">Home</router-link>
+        <router-link to="/me">About</router-link>
+        <router-link to="/work">Experience</router-link>
+        <router-link to="/interests">Interests</router-link>
+      </nav>
+      <!-- <div id="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="mobile-nav">
+          <router-link to="/">Home</router-link>
+          <router-link to="/me">About</router-link>
+          <router-link to="/work">Experience</router-link>
+          <router-link to="/interests">Interests</router-link>
+        </div>
+      </div> -->
+    </header>
     
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
@@ -26,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed, defineComponent } from 'vue'
+import { ref, onMounted, computed, defineComponent } from 'vue';
 
 onMounted(() => {
   const nav: Element = document.querySelector('.nav')!;
@@ -99,6 +112,21 @@ export default defineComponent({
 
   a:hover:after {
     width: 100%;
+  }
+
+  .router-link-active {
+    color: #a9afb8;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: #a9afb8;
+      height: 0.2rem;
+      width: 100%;
+      left: 0;
+      bottom: -0.2rem;
+      transition: 0.1s;
+    }
   }
 }
 

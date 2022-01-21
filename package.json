@@ -1,6 +1,10 @@
 {
   "name": "l23de.github.io",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Lester Huang's Personal Website",
+  "homepage": "https://l23de.github.io",
+  "license": "CC-BY-NC-4.0",
+  "people": { "author": "Lester Huang <huangl302d@gmail.com> (https://l23de.github.io)" },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build && cp sitemap.xml dist/ && cp dist/index.html dist/404.html",
