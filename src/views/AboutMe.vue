@@ -1,6 +1,6 @@
 <template>
     <div class="content-wrap">
-        <h2 class="heading handshake">About Me <span class="emoji">&#x1F91D;</span></h2>
+        <h1 class="heading handshake">About Me <span class="emoji">&#x1F91D;</span></h1>
         <div id="about-me" itemscope itemtype="https://schema.org/Person">
             <div id="about-me-content">
                 <img src="/logo.webp" alt="Picture of Lester" itemprop="image"/>
@@ -12,10 +12,8 @@
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 #about-me {
-    width: 100%;
-
     img {
         width: min(100%, 300px);
         height: auto;

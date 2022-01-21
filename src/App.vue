@@ -72,15 +72,14 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   transition: transform 0.4s;
-  overflow: auto;
   z-index: 10; // Makes nav appear on top of everything
+  gap: 1rem;
 
   a {
     position: relative;
     font-size: 1.2rem;
     color: black;
     text-decoration: none;
-    margin: 0 0.5rem;
   }
 
   a:after {

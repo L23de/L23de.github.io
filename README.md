@@ -8,7 +8,7 @@ Get to know me and be sure to leave any suggestions in the Github Issues pane
 
 ```bash
 yarn # Installs dependencies
-yarn dev # Runs a local server to serve the website
+yarn dev # Runs a local server to serve the website (Defaults to port 3000)
 ```
 
-The website should be located @ [localhost:3000](http://localhost:3000/) by default
+This work is licensed under a [Creative Commons Attribution NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)

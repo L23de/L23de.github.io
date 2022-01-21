@@ -1,15 +1,13 @@
 <template>
-    <div :id="company" class="work-content">
-        <a :href="website" target="_blank"><img :src="'/images/work/'+shorthand+'.webp'" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'" loading="lazy"/></a>
-        <div :id="company+'-pos-'+index" v-for="(position, index) in positions" class="pos-info">
-            <h3 class="pos-title" itemprop="jobTitle">{{position['title']}}</h3>
-            <p class="pos-date">{{position['dates']}}</p>
-            <div class="pos-skills">
-                <q-chip v-for="skill in position['skills']" :label="skill" :ripple="false" outline rounded/>
-            </div>
-            <div class="pos-desc">
-                <p v-for="paragraph in position['desc']">{{paragraph}}</p>
-            </div>
+    <a :href="website" target="_blank"><img :src="'/images/work/'+shorthand+'.webp'" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'" loading="lazy"/></a>
+    <div v-for="(position, index) in positions" class="pos-info">
+        <h2 class="pos-title" itemprop="jobTitle">{{position['title']}}</h2>
+        <p class="pos-date">{{position['dates']}}</p>
+        <div class="pos-skills">
+            <q-chip v-for="skill in position['skills']" :label="skill" :ripple="false" outline rounded/>
+        </div>
+        <div class="pos-desc">
+            <p v-for="paragraph in position['desc']">{{paragraph}}</p>
         </div>
     </div>
 </template>
@@ -34,14 +32,11 @@ const props = defineProps({
 
 <style lang="scss">
 .banner-img {
-    display: block;
-    text-align: center;
-    width: min(97%, 500px);
+    display: inline-block;
+    width: min(calc(#{$borderMargin}), 500px);
     height: auto;
     border-radius: 20px;
-    background-color: white;
-    margin: 3px;
-    margin-bottom: 1rem;
+    margin: $borderOutline;
 }
 
 // Left most child gets aligned properly
@@ -52,14 +47,9 @@ const props = defineProps({
 .pos-info {
     margin-bottom: 2rem;
 
-    .pos-title {
-        font-size: 1.75rem;
-        margin-bottom: 0;
-    }
-
     .pos-date {
-        margin-top: -5px;
-        margin-bottom: 0;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 }
 </style>

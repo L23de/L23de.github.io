@@ -1,11 +1,9 @@
 <template>
-    <div :id="name" class="interest-content">
-        <h3 class="interest-title">{{name}}</h3>
-        <div class="interest-desc">
-            <p v-for="paragraph in desc">{{paragraph}}</p>
-        </div>
-        <img :alt="name.charAt(0).toUpperCase()+name.slice(1)+' Picture'" class="interest-pic" :src="'/images/interests/'+shorthand+'.webp'" loading="lazy">
+    <h2 class="interest-title">{{name}}</h2>
+    <div class="interest-desc">
+        <p v-for="paragraph in desc">{{paragraph}}</p>
     </div>
+    <img :alt="name.charAt(0).toUpperCase()+name.slice(1)+' Picture'" class="interest-pic" :src="'/images/interests/'+shorthand+'.webp'" loading="lazy">
 </template>
 
 <script setup lang="ts">
@@ -26,7 +24,7 @@ const props = defineProps({
 .interest-pic {
     display: block;
     border-radius: 10px;
-    width: 97%;
-    margin-inline: 2px;
+    width: calc(100% - #{$borderOutline * 2});
+    margin-inline: $borderOutline;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
     <div class="content-wrap simple-page">
         <div class="p-intro">
-            <span class="emoji">&#x1F914;</span>
-            <h2>Uh oh, looks like you got lost</h2>
-            <h3>Let's get you back <a href="/">home</a>!</h3>
+            <div class="emoji">&#x1F914;</div>
+            <h1>Uh oh, looks like you got lost</h1>
+            <h2>Let's get you back <a href="/">home</a>!</h2>
         </div>
     </div>
 </template>

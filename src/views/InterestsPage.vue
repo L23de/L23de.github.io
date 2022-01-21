@@ -1,6 +1,6 @@
 <template>
-    <div class="content-wrap">
-        <h2 class="heading">Other Hobbies <span class="emoji">&#x1F4F7;</span></h2>
+    <div class="content-wrap shake">
+        <h1 class="heading">Other Hobbies <span class="emoji">&#x1F4F7;</span></h1>
         <div id="interests-body">
             <q-carousel
                 v-model="slide"
@@ -15,7 +15,7 @@
                 class="transparent text-black full-height"
                 >
                 
-                <q-carousel-slide :name="interest['name']" v-for="interest in interests">
+                <q-carousel-slide :name="interest['name']" v-for="interest in interests" class="carousel interest-content disable-select">
                     <InterestInfo v-bind="interest"></InterestInfo>
                 </q-carousel-slide>
             </q-carousel>
@@ -34,5 +34,9 @@ const slide = ref(interests[0]['name']) // First slide is the most recent compan
 <style scoped lang="scss">
 .heading {
     margin-bottom: 0;
+}
+
+#interests-body {
+    cursor: grab;
 }
 </style>
