@@ -27,19 +27,23 @@
       </transition>
     </router-view>
     
-    <footer class="footer">
-      <div class="contact center-flex" v-if="!splashPage">
-          <q-btn round icon="fab fa-linkedin-in" type="a" href="https://www.linkedin.com/in/lesterhuang/" target="_blank" size="0.8rem" unelevated />
-          <q-btn round icon="far fa-envelope" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="0.8rem" unelevated />
-          <q-btn round icon="fab fa-github" type="a" href="https://github.com/L23de" target="_blank" size="0.8rem" unelevated />
-          <q-btn round icon="fab fa-instagram" type="a" href="https://www.instagram.com/lester.302d/" target="_blank" size="0.8rem" unelevated />
-      </div>
-    </footer>
+    <transition name="fade">
+      <footer class="footer" v-if="!splashPage">
+        <div class="contact center-flex">
+            <q-btn round icon="fab fa-linkedin-in" type="a" href="https://www.linkedin.com/in/lesterhuang/" target="_blank" size="0.8rem" unelevated />
+            <q-btn round icon="far fa-envelope" type="a" href="mailto:huangl302d@gmail.com" target="_blank" size="0.8rem" unelevated />
+            <q-btn round icon="fab fa-github" type="a" href="https://github.com/L23de" target="_blank" size="0.8rem" unelevated />
+            <q-btn round icon="fab fa-instagram" type="a" href="https://www.instagram.com/lester.302d/" target="_blank" size="0.8rem" unelevated />
+        </div><a href="https://github.com/L23de/l23de.github.io" target="_blank" class="foot-copy">&copy; {{year}}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Lester Huang</a>
+      </footer>
+    </transition>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, computed, defineComponent } from 'vue';
+
+const year = new Date().getFullYear();
 
 onMounted(() => {
   const nav: Element = document.querySelector('.nav')!;
@@ -71,6 +75,13 @@ export default defineComponent({
 <style lang="scss">
 @import '@/css/index.scss';
 
+.foot-copy {
+  color: black;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 // Nav Interactions
 // Scroll Hide: https://www.youtube.com/watch?v=Q_XZk5Vnujw
 // Hover Underline: https://www.youtube.com/watch?v=aswRKAjjWuE
@@ -98,7 +109,7 @@ export default defineComponent({
   a:after {
     content: "";
     position: absolute;
-    background-color: #a9afb8;
+    background-color: $links;
     height: 0.2rem;
     width: 0;
     left: 0;
@@ -107,7 +118,7 @@ export default defineComponent({
   }
 
   a:hover {
-    color: #a9afb8;
+    color: $links;
   }
 
   a:hover:after {
@@ -115,12 +126,12 @@ export default defineComponent({
   }
 
   .router-link-active {
-    color: #a9afb8;
+    color: $links;
 
     &:after {
       content: "";
       position: absolute;
-      background-color: #a9afb8;
+      background-color: $links;
       height: 0.2rem;
       width: 100%;
       left: 0;
@@ -139,7 +150,7 @@ export default defineComponent({
 // Reference: https://learnvue.co/2021/01/4-awesome-examples-of-vue-router-transitions/#-1-fade-vue-router-transitions
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 
 .fade-enter-from,

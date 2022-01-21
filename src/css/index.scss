@@ -53,6 +53,21 @@ p {
     font-size: 1.25rem;
 }
 
+a {
+    text-decoration: none;
+    color: $links;
+
+    &:hover {
+        &:link {
+            color: $unvisited;
+        }
+
+        &:visited {
+            color: $visited;
+        }
+    }
+}
+
 img {
     outline: $borderOutline solid black;
     filter: grayscale(100%);
@@ -80,9 +95,8 @@ img {
 
 .footer {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     width: 100%;
-    height: $footerHeight;
 }
 
 .center-block {
@@ -139,15 +153,19 @@ img {
     background: transparent;
 }
 
+*::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #535353;
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: #828282;
-    border-radius: 10px;
-    border: 3px solid transparent;
-    background-clip: content-box;
 }
 
 @keyframes shake-animation {
