@@ -75,7 +75,6 @@ export default defineComponent({
   overflow: auto;
   z-index: 10; // Makes nav appear on top of everything
 
-  
   a {
     position: relative;
     font-size: 1.2rem;
