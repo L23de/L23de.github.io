@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build && cd dist && cp index.html 404.html && cd ..",
+    "build": "vue-tsc --noEmit && vite build && cp sitemap.xml dist/ && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "build-deploy": "yarn build && yarn deploy"
