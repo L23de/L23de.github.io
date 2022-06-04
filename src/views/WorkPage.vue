@@ -12,17 +12,26 @@
                 swipeable
                 animated
                 padding
-                navigation
+                infinite
                 transition-prev="slide-right"
                 transition-next="slide-left"
-                control-color="blue-grey-9"
-                navigation-icon="fas fa-circle"
                 class="transparent text-black full-height"
                 >
-                <q-carousel-slide :name="workDatum['company']" v-for="workDatum in workData" class="work-content disable-select carousel">
+                <q-carousel-slide :name="workDatum['shorthand']" v-for="workDatum in workData" class="work-content disable-select carousel">
                     <WorkExperience v-bind="workDatum"></WorkExperience>
                 </q-carousel-slide>
             </q-carousel>
+
+            <div class="row justify-center">
+                <q-btn-toggle
+                    unelevated
+                    v-model="slide"
+                    toggle-color="orange-1"
+                    toggle-text-color="black"
+                    :options= "labels"
+                />
+            </div>
+
         </div>
     </div>
 </template>
@@ -32,17 +41,36 @@ import { ref } from 'vue'
 import workData from '../content/work';
 import WorkExperience from "../components/WorkExperience.vue";
 
-const slide = ref(workData[0]['company']) // First slide is the most recent company
-const isActive = ref(false)
+const slide = ref(workData[0]['shorthand']) // First slide is the most recent company
+
+let labels = []
+workData.forEach((workDatum, index) => {
+    labels.push({
+        label: index + 1,
+        value: workDatum['shorthand']
+    })
+})
 </script>
 
 <style lang="scss">
 #work-body {
     cursor: grab;
+    padding-inline: 0rem;
 }
 
 .work-slide {
     margin-top: 1rem;
     padding-inline: 0;
+}
+
+.q-btn-group {
+    border-radius: 50%;
+    
+
+    .q-btn {
+        border-radius: inherit !important;
+        height: 40px;
+        width: 40px;
+    }
 }
 </style>

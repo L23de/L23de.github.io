@@ -7,11 +7,9 @@
                 swipeable
                 animated
                 padding
-                navigation
+                infinite
                 transition-prev="slide-right"
                 transition-next="slide-left"
-                control-color="blue-grey-9"
-                navigation-icon="fas fa-circle"
                 class="transparent text-black full-height"
                 >
                 
@@ -19,6 +17,17 @@
                     <InterestInfo v-bind="interest"></InterestInfo>
                 </q-carousel-slide>
             </q-carousel>
+
+            <div class="row justify-center">
+                <q-btn-toggle
+                    unelevated
+                    v-model="slide"
+                    toggle-color="orange-1"
+                    toggle-text-color="black"
+                    :options= "labels"
+                />
+            </div>
+
         </div>
     </div>
 </template>
@@ -29,6 +38,14 @@ import interests from '../content/interests';
 import InterestInfo from "../components/InterestInfo.vue";
 
 const slide = ref(interests[0]['name']) // First slide is the most recent company
+
+let labels = []
+interests.forEach((interest, index) => {
+    labels.push({
+        label: index + 1,
+        value: interest['name']
+    })
+})
 </script>
 
 <style scoped lang="scss">
