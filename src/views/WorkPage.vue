@@ -43,7 +43,7 @@ import WorkExperience from "../components/WorkExperience.vue";
 
 const slide = ref(workData[0]['shorthand']) // First slide is the most recent company
 
-let labels = []
+let labels: any = []
 workData.forEach((workDatum, index) => {
     labels.push({
         label: index + 1,

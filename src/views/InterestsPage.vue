@@ -39,7 +39,7 @@ import InterestInfo from "../components/InterestInfo.vue";
 
 const slide = ref(interests[0]['name']) // First slide is the most recent company
 
-let labels = []
+let labels: any = []
 interests.forEach((interest, index) => {
     labels.push({
         label: index + 1,
