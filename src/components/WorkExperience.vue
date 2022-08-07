@@ -1,6 +1,6 @@
 <template>
     <a :href="website" target="_blank"><img :src="'/images/work/'+shorthand+'.webp'" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'" loading="lazy"/></a>
-    <div v-for="(position, index) in positions" class="pos-info">
+    <div v-for="position in positions" class="pos-info">
         <h2 class="pos-title" itemprop="jobTitle">{{position['title']}}</h2>
         <p class="pos-date">{{position['dates']}}</p>
         <div class="pos-skills">

@@ -6,8 +6,8 @@ import Optum from './optum.json'
 // JSON Order listed in reverse choronological order (Most recent to oldest)
 const workData = [ 
     Millennium,
-    Optum,
     Lehigh,
+    Optum,
     JHU
 ];
 

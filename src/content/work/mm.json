@@ -1,17 +1,21 @@
 {
-    "shorthand": "mm",
-    "company": "Millennium Management",
-    "website": "https://www.mlp.com/",
-    "positions": [
-        {
-            "title": "Incoming Quality Assurance Analyst Intern",
-            "dates": "June - August 2022",
-            "desc": [
-                "QA will be a new frontier for me, another way to seek discomfort and learn many new things! As a QA Analyst, I expect to pick up many new things about good software development practices. The world of developers and testers are converging, with the line between the two blurring, with many new projects requiring a developer to create tests or a tester to fix a bug. So I'm very glad to be able to step into this opportunity as my second professional internship!",
-                "Along with learning new software development practices, I expect to be thrown into a large, existing codebase, where I will have to figure out the general flow and integrate new changes. This will also be a first. Continuous Integration and Delivery (CI/CD) and Automation Testing (and their frameworks) will also be new concepts I expect to pick up along the way.",
-                "Millennium, one of the world's leading alternative investment management firms,  will also be a great way for me to enter the fintech space, where I believe great innovation and disruption is ripe."
-            ],
-            "skills": ["Java", "Maven", "CI/CD", "SQL"]
-        }
-    ]
+	"shorthand": "mm",
+	"company": "Millennium Management",
+	"website": "https://www.mlp.com/",
+	"positions": [
+		{
+			"title": "Software Quality Assurance Analyst",
+			"dates": "June - August 2022",
+			"desc": [
+				"This internship experience was very unique. Having the opportunity to work at one of the largest multi-manager firms and explore the internal structure was awesome. Millennium is built around a very flat managerial structure (I would have been around 5 rungs below Israel Englander, the CEO) and their unique feature of running each team as an independent hedge fund. Working with a QA team was not something I had ever thought of, it never crossed my mind when all we do in school is the typical fullstack development process. While the majority of my internship revolved around the development of a tool (which is a core QA tool), I was able to learn a lot about the company's methods in assuring quality in their applications, as well as the general integration of development and testing by the industry.",
+				"A little more on my project: It was an internal tool that provides the QA team with monitoring and analysis of production queries. It is essentially composed of three main parts:",
+				"• Extract - Pull in production queries that have already been run",
+				"• Replay - Replay those same extract queries in a user acceptance testing (UAT) environment",
+				"• Save - Parse and analyze the statistics of both production and UAT responses, saving that in a timeseries database",
+				"That data can then be visualized by other tools. The major challenge was not to develop the program, the core logic was already created by a senior programmer specifically for his team. My challenge was to take what he had and make it generic, allowing other teams to make simple configuration changes and have it work. This included compatibility with various methods of extracting, for example, querying on elasticsearch or parsing logs on a remote Unix server, and various methods of replaying based on either team standards or data collected from production queries. This provided me the ability to work on an existing project, make it better, but also add my own feature (Making it generic essentially required redo-ing the entire program) and speak with other departments (All of whom were either in Millennium's NYC or Singapore office). I thoroughly enjoyed working at Millennium and finally working in person, being able to chat with neighbors and grab lunch with.",
+				"But being in Miami also includes living in Magic City. So throughout my 3 months, I lived in 4 different Airbnbs in 4 different VERY different communities, from the the gated serenity of Morningside to the graffiti plaid sidewalks in Wynwood to the calmness of the historic Coral Gables and eventually the familiar hustle and bustle of Brickell, synonymous to the Times Square of Miami. Sprinkle in some beach days and fancy dinners, and I would say I got the full Miami experience!"
+			],
+			"skills": ["Java", "Spring", "Maven", "Elasticsearch", "APIs", "Unix"]
+		}
+	]
 }
