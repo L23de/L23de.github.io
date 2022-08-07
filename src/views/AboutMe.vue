@@ -15,7 +15,7 @@
 <style lang="scss">
 #about-me {
     img {
-        width: min(100%, 300px);
+        width: min(100%, 450px);
         height: auto;
         border-radius: 50%;
         margin: 0px 20px 15px 20px;
