@@ -1,33 +1,33 @@
 {
-    "shorthand": "lehigh",
-    "company": "Lehigh University",
-    "website": "https://www1.lehigh.edu/",
-    "positions": [
-        {
-            "title": "Junior Systems Administrator",
-            "dates": "January 2022 - Present",
-            "desc": [
-                "In Lehigh's JSA department, there are many things that we can work on. It isn't a very strict format, so sometimes, on our biweekly calls, we might discuss Docker vs Kubernetes or we might talk about how Lehigh's systems are powered by VMs architectured by the help of Ansible or simply just dive into our main project. The main project is a Flask web app that another student (my roommate actually!) and I work on that automates the process of scheduling student lab monitors. While it is awesome that we can graduate and leave Lehigh University, and still have our creation persist on and help students and our supervisor alike, I think the ability to have someone, our supervisor, that has had professional IT experience to speak with is even more valuable."
-            ],
-            "skills": ["Python", "Flask", "SQLite"]
-        },
-        {
-            "title": "CS Teaching Assistant",
-            "dates": "September-December 2021",
-            "desc": [
-                "Passing a CS class is one thing, but being able to teach someone else and guide them through a course is another. I took the opportunity to serve as a TA/grader for CSE 109 to do just that.", 
-                "The CS course structure at Lehigh can be confusing for students, languages and concepts don't always coincide or are not always taught in \"chronological\" order, so being able to refresh myself on such topics and mentor my fellow colleagues were two great pluses."
-            ],
-            "skills": ["C Programming Language"]
-        },
-        {
-            "title": "B.S Computer Science | Data Science Minor",
-            "dates": "September 2019 - Expected Grad. December 2022",
-            "desc": [
-                "My alma mater. Here, I was able to expand my perspectives on the world and grow in all such ways", 
-                "Initially coming in as a computer engineer (Thanks to the JHU Engineering Innovation program), I switched my major to strictly computer science after my first programming class, CSE 002. There, I wrote my first \"Hello World\" program in Java and here we are..."
-            ],
-            "skills": ["Algorithms", "Various Programming Concepts"]
-        }
-    ]
+	"shorthand": "lehigh",
+	"company": "Lehigh University",
+	"website": "https://www1.lehigh.edu/",
+	"positions": [
+		{
+			"title": "Junior Systems Administrator",
+			"dates": "January - December 2022",
+			"desc": [
+				"In Lehigh's JSA department, there are many things that we can work on. It isn't a very strict format, so sometimes, on our biweekly calls, we might discuss Docker vs Kubernetes or we might talk about how Lehigh's systems are powered by VMs architectured by the help of Ansible or simply just dive into our main project. The main project is a Flask web app that another student (my roommate actually!) and I work on that automates the process of scheduling student lab monitors. While it is awesome that we can graduate and leave Lehigh University, and still have our creation persist on and help students and our supervisor alike, I think the ability to have someone, our supervisor, that has had professional IT experience to speak with is even more valuable."
+			],
+			"skills": ["Python", "Flask", "SQLite"]
+		},
+		{
+			"title": "CS Teaching Assistant",
+			"dates": "September - December 2021",
+			"desc": [
+				"Passing a CS class is one thing, but being able to teach someone else and guide them through a course is another. I took the opportunity to serve as a TA/grader for CSE 109 to do just that.",
+				"The CS course structure at Lehigh can be confusing for students, languages and concepts don't always coincide or are not always taught in \"chronological\" order, so being able to refresh myself on such topics and mentor my fellow colleagues were two great pluses."
+			],
+			"skills": ["C Programming Language"]
+		},
+		{
+			"title": "B.S Computer Science | Data Science Minor",
+			"dates": "September 2019 - December 2022",
+			"desc": [
+				"My alma mater. Here, I was able to expand my perspectives on the world and grow in all such ways",
+				"Initially coming in as a computer engineer (Thanks to the JHU Engineering Innovation program), I switched my major to strictly computer science after my first programming class, CSE 002. There, I wrote my first \"Hello World\" program in Java and here we are..."
+			],
+			"skills": ["Algorithms", "Various Programming Concepts"]
+		}
+	]
 }
