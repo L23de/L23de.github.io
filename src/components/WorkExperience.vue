@@ -1,13 +1,29 @@
 <template>
-    <a :href="website" target="_blank"><img :src="'/images/work/'+shorthand+'.webp'" class="banner-img" :alt="company.charAt(0).toUpperCase()+company.slice(1)+'\'s Banner'" loading="lazy"/></a>
+    <a :href="website" target="_blank"
+        ><img
+            :src="'/images/work/' + shorthand + '.webp'"
+            class="banner-img"
+            :alt="
+                company.charAt(0).toUpperCase() +
+                company.slice(1) +
+                '\'s Banner'
+            "
+            loading="lazy"
+    /></a>
     <div v-for="position in positions" class="pos-info">
-        <h2 class="pos-title" itemprop="jobTitle">{{position['title']}}</h2>
-        <p class="pos-date">{{position['dates']}}</p>
+        <h2 class="pos-title" itemprop="jobTitle">{{ position['title'] }}</h2>
+        <p class="pos-date">{{ position['dates'] }}</p>
         <div class="pos-skills">
-            <q-chip v-for="skill in position['skills']" :label="skill" :ripple="false" outline rounded/>
+            <q-chip
+                v-for="skill in position['skills']"
+                :label="skill"
+                :ripple="false"
+                outline
+                rounded
+            />
         </div>
         <div class="pos-desc">
-            <p v-for="paragraph in position['desc']">{{paragraph}}</p>
+            <p v-for="paragraph in position['desc']">{{ paragraph }}</p>
         </div>
     </div>
 </template>
@@ -16,18 +32,18 @@
 import { PropType } from 'vue';
 
 interface posConfig {
-    title: string,
-    dates: string,
-    desc: Array<string>,
-    skills: Array<string>
+    title: string;
+    dates: string;
+    desc: Array<string>;
+    skills: Array<string>;
 }
 
 const props = defineProps({
     shorthand: { type: String, required: true },
     company: { type: String, required: true },
     website: { type: String, required: true },
-    positions: { type: Object as PropType<Array<posConfig>>, required: true }
-})
+    positions: { type: Object as PropType<Array<posConfig>>, required: true },
+});
 </script>
 
 <style lang="scss">
@@ -39,9 +55,17 @@ const props = defineProps({
     margin: $borderOutline;
 }
 
-// Left most child gets aligned properly
-.q-chip:nth-child(1) {
-    margin-left: 0;
+.pos-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.q-chip {
+    margin: 0;
+    margin-block: 2px;
 }
 
 .pos-info {

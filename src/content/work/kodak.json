@@ -1,0 +1,18 @@
+{
+    "shorthand": "ka",
+    "company": "Kodak Alaris",
+    "website": "https://www.kodakalaris.com/",
+    "positions": [
+        {
+            "title": "Software Engineer",
+            "dates": "March 2023 - Present",
+            "desc": [
+                "Kodak has had a long history with the city of Rochester. That's where I ended up moving for my first full-time position out of college. I am still exploring the city of Rochester, having gone 3 months and counting without eating a garbage plate yet (Google it!).",
+                "Kodak Alaris is quite different from Eastman Kodak, the one that you were probably thinking about, but many of my coworkers were  long-time employees at Eastman Kodak, all of whom have developed a strong breadth of knowledge and community.",
+                "Coming in, I helped fill in for a very small, but mighty team. It was 4 people (including myself) that was essentially in charge of all the software for the Travel & Leisure division of the business. This involved creating and maintaining software for ride capture systems of major theme parks, cruise ships, and popular tourist attractions.",
+                "The company is also going through a major technological shift, converting their existing codebases from monorepos to microservices. And I hope my team and I will lead this initiative for the company, by not only modernizing our architecture, but also by introducing a fresh viewpoint changing development practices and culture for the better."
+            ],
+            "skills": ["C#", ".NET", "Docker", "Azure", "Microservices"]
+        }
+    ]
+}
