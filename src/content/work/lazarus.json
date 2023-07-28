@@ -1,0 +1,15 @@
+{
+    "shorthand": "lz",
+    "company": "Lazarus AI",
+    "website": "https://www.lazarusforms.com/",
+    "positions": [
+        {
+            "title": "Software Engineer",
+            "dates": "July 2023 - Present",
+            "desc": [
+                "It's my first week here, already appreciating the startup vibes, variety of products, and talent of my team. Will update this as I have more done!"
+            ],
+            "skills": ["Python", "Firebase", "GCP"]
+        }
+    ]
+}
